@@ -3,7 +3,7 @@ import argparse
 import re
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--dirname", action="store", help='Directory of the files which have to be renamed')
+parser.add_argument("--dirname", action="store", help='Directory of the files which have to be renamed', required=True)
 parser.add_argument("--prefix", action="store", default=None, help='prefix a string to the file names')
 args = parser.parse_args()
 
